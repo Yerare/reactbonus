@@ -1,13 +1,106 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.messenger-container {
+    display: flex;
+    max-width: 90%;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: dodgerblue;
+}
+
+.chat-list {
+    width: 20%;
+    padding: 20px;
+    border-right: 1px solid black;
+}
+
+.chat-list h2 {
+    margin-top: 0;
+    color: blue;
+}
+
+.chat-list ul {
+    list-style: none;
+    padding: 0;
+    color: #5ea3d0;
+}
+
+.chat-list li {
+    cursor: pointer;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 3px;
+    background-color: powderblue;
+}
+
+.chat-list li:hover {
+    background-color: darkblue;
+}
+
+.message-container {
+    width: 70%;
+    height: 70%;
+    padding: 20px;
+}
+
+.message-list {
+    max-height: 300px;
+    overflow-y: auto;
+    overflow-x: auto;
+    background-color: skyblue;
+}
+
+.message {
+    margin: 10px;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: deepskyblue;
+}
+
+.message p {
+    margin: 0;
+}
+
+.message small {
+    color: #999;
+}
+
+.message-input {
+    margin-bottom: 35px;
+    display: flex;
+    align-items: center;
+}
+
+.message-input input[type="text"] {
+    flex: 1;
+    padding: 8px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+    background-color: whitesmoke;
+}
+
+.message-input button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 3px;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}
+
+.message-input button:hover {
+    background-color: darkblue;
 }
